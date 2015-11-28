@@ -8,23 +8,40 @@ import './resume-app.scss';
 class ResumeApp extends React.Component {
   render() {
     // TODO: pull this out of a file or external source?
-    const jobs = [{
-      company: 'Hudl',
-      title: 'Developer Lead',
-      description: 'Hudl is a pretty awesome place.',
-    }, {
-      company: 'Garmin',
-      title: 'Software Engineer Intern',
-      description: 'Garmin was okay, but KC was pretty damn awesome.',
-    }, {
-      company: 'Sandhills Publishing',
-      title: 'Software Engineer Intern',
-      description: 'Suits every day? Count me out.',
-    }, {
-      company: 'Baldwin, Hackett & Meeks, Inc.',
-      title: 'Software Engineer Intern',
-      description: 'I had no idea what was going on.',
-    }];
+    const jobs = [
+      {
+        company: 'Hudl',
+        title: 'Developer Lead',
+        timeframe: 'May 2014 - Present',
+        description: `I work on Hudl's core feature set for its upcoming platform,
+        writing the tools coaches and athletes will use to improve through video
+        every day.`,
+      },
+      {
+        company: 'Garmin',
+        timeframe: 'May 2013 - August 2013',
+        title: 'Software Engineer Intern',
+        description: `I wrote unit and system tests for our aviation TCAS
+        units, and identified new algorithms to increase TCAS accuracy after
+        studying existing flight data and simulations.`,
+      },
+      {
+        company: 'Sandhills Publishing',
+        timeframe: 'May 2012 - August 2012',
+        title: 'Software Engineer Intern',
+        description: `I created custom Microsoft Dynamics CRM pages for our clients,
+        as well as developing and consuming an internal localization directory for these pages.`,
+      },
+      {
+        company: 'Baldwin, Hackett & Meeks, Inc.',
+        timeframe: 'May 2011 - August 2011',
+        title: 'Software Engineer Intern',
+        description: `I wrote data mining scripts using Python and MySQL to assist
+        clients in understanding and making judgments based on their health care records.
+        After mining this information, I created a PHP web app to display the data
+        in a more readable way.`,
+      },
+    ];
 
     return (
       <div>
