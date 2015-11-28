@@ -1,0 +1,34 @@
+{
+  "name": "jordandegner.com",
+  "version": "1.0.0",
+  "description": "The personal website for Jordan Degner",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDegner0129/jordandegner.com.git"
+  },
+  "author": "Jordan Degner <jdegner0129@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/JDegner0129/jordandegner.com/issues"
+  },
+  "homepage": "https://github.com/JDegner0129/jordandegner.com#readme",
+  "dependencies": {
+    "babel": "^6.1.18",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "eslint-loader": "^1.1.1",
+    "express": "^4.13.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "webpack": "^1.12.9"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.2",
+    "eslint-plugin-react": "^3.10.0"
+  }
+}
