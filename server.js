@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send(read('./public/index.html', 'utf8'));
 });
 
-const server = app.listen(1337, () => {
+const server = app.listen(process.env.PORT, () => {
   const host = server.address().address;
   const port = server.address().port;
 
