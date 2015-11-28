@@ -2,7 +2,7 @@
 The repository for my personal website
 
 ## Purpose
-Before you browse the code and wonder, "why the hell did he write a React app that isn't actually pulling data from anywhere or updating the page at all?", know that I'm fully aware of the needlessness for it. I wrote this website using React just to give myself practicing writing (basic) React components and setting up a build configuration for React/ES6 apps. I'm also a fan of the code organization, whether it's bringing me benefit or not.
+Before you browse the code and wonder, "why the hell did he write a React app that isn't actually pulling data from anywhere or updating the page at all?", know that I'm fully aware of the needlessness for it. I wrote this website using React just to give myself practice writing (basic) React components and setting up a build configuration for React/ES6 apps. I'm also a fan of the code organization, whether it's bringing me benefit or not.
 
 ## Installing
 Hopefully this is as easy a setup for you as it was for me:
