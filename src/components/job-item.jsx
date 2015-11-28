@@ -11,7 +11,8 @@ export default class Job extends React.Component {
           <span className="job-timeframe">{this.props.timeframe}</span>
         </div>
         <h3 className="job-title clearfix">{this.props.title}</h3>
-        <p>{this.props.description}</p>
+        <p className="job-description">{this.props.description}</p>
+        <p className="job-tech">{this.props.tech}</p>
       </div>
     );
   }
@@ -23,4 +24,5 @@ Job.propTypes = {
   title: React.PropTypes.string.isRequired,
   timeframe: React.PropTypes.string.isRequired,
   description: React.PropTypes.string,
+  tech: React.PropTypes.string.isRequired,
 };

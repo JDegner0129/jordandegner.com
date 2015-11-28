@@ -10,7 +10,8 @@ export default class JobList extends React.Component {
           url={job.url}
           title={job.title}
           timeframe={job.timeframe}
-          description={job.description} />
+          description={job.description}
+          tech={job.tech} />
       );
     });
 
