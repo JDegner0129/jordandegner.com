@@ -7,7 +7,7 @@ export default class Job extends React.Component {
     return (
       <div className="job-item">
         <div className="job-item-header">
-          <h2 className="job-company">{this.props.company}</h2>
+          <h2 className="job-company"><a href={this.props.url}>{this.props.company}</a></h2>
           <span className="job-timeframe">{this.props.timeframe}</span>
         </div>
         <h3 className="job-title clearfix">{this.props.title}</h3>
@@ -18,6 +18,7 @@ export default class Job extends React.Component {
 }
 
 Job.propTypes = {
+  url: React.PropTypes.string.isRequired,
   company: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
   timeframe: React.PropTypes.string.isRequired,

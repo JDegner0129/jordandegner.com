@@ -22,6 +22,7 @@ const socialInfo = {
 const jobInfo = [
   {
     company: 'Hudl',
+    url: 'http://www.hudl.com',
     title: 'Developer Lead',
     timeframe: 'May 2014 - Present',
     description: `I work on Hudl's core feature set for its upcoming platform,
@@ -30,6 +31,7 @@ const jobInfo = [
   },
   {
     company: 'Garmin',
+    url: 'http://www.garmin.com',
     timeframe: 'May 2013 - August 2013',
     title: 'Software Engineer Intern',
     description: `I wrote unit and system tests for our aviation TCAS
@@ -38,13 +40,15 @@ const jobInfo = [
   },
   {
     company: 'Sandhills Publishing',
+    url: 'http://www.sandhills.com',
     timeframe: 'May 2012 - August 2012',
     title: 'Software Engineer Intern',
     description: `I created custom Microsoft Dynamics CRM pages for our clients,
     as well as developing and consuming an internal localization directory for these pages.`,
   },
   {
-    company: 'Baldwin, Hackett & Meeks, Inc.',
+    company: 'Baldwin Hackett & Meeks, Inc.',
+    url: 'http://www.bhmi.com',
     timeframe: 'May 2011 - August 2011',
     title: 'Software Engineer Intern',
     description: `I wrote data mining scripts using Python and MySQL to assist

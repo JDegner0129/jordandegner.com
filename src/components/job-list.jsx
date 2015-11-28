@@ -7,6 +7,7 @@ export default class JobList extends React.Component {
     const jobs = this.props.jobs.map(job => {
       return (
         <Job company={job.company}
+          url={job.url}
           title={job.title}
           timeframe={job.timeframe}
           description={job.description} />
