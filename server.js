@@ -1,8 +1,13 @@
 const express = require('express');
+const fs = require('fs');
+
+const read = fs.readFileSync;
 const app = express();
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-  res.send('Hello world!');
+  res.send(read('./public/index.html', 'utf8'));
 });
 
 const server = app.listen(1337, () => {
