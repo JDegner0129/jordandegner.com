@@ -1,0 +1,21 @@
+.header {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight:bold;
+
+  div {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 8rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+}

@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 html, body {
   font-family: 'Raleway', sans-serif;
@@ -10,35 +11,6 @@ html, body {
   margin: 0;
 }
 
-.header {
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight:bold;
-
-  div {
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 8rem;
-    margin: 0;
-  }
-
-  h2 {
-    font-size: 3rem;
-    margin: 0;
-  }
-}
-
-.footer {
-  background-color: $red;
-  height: 10rem;
-  margin-top: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight:bold;
-  font-size:2rem;
+a {
+  text-decoration: none;
 }
