@@ -6,33 +6,25 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <span className="copyright">Copyright &copy; 2015 Jordan Degner</span>
-        <section className="social">
-          <div className="twitter">
+        <section className="footer-content">
+          <p className="copyright">Copyright &copy; 2015 Jordan Degner</p>
+          <section className="social">
             <a href={this.props.twitterUrl}>
-              <span className="fa fa-fw fa-twitter"></span> Twitter
+              <span className="fa fa-fw fa-twitter"></span>
             </a>
-          </div>
-          <div className="facebook">
             <a href={this.props.facebookUrl}>
-              <span className="fa fa-fw fa-facebook"></span> Facebook
+              <span className="fa fa-fw fa-facebook"></span>
             </a>
-          </div>
-          <div className="github">
             <a href={this.props.githubUrl}>
-              <span className="fa fa-fw fa-github"></span> GitHub
+              <span className="fa fa-fw fa-github"></span>
             </a>
-          </div>
-          <div className="linkedin">
             <a href={this.props.linkedinUrl}>
-              <span className="fa fa-fw fa-linkedin"></span> LinkedIn
+              <span className="fa fa-fw fa-linkedin"></span>
             </a>
-          </div>
-          <div className="email">
             <a href={this.props.email}>
-              <span className="fa fa-fw fa-envelope"></span> Email
+              <span className="fa fa-fw fa-envelope"></span>
             </a>
-          </div>
+          </section>
         </section>
       </footer>
     );

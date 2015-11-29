@@ -2,14 +2,16 @@
 
 .footer {
   background-color: $red;
-  height: 15rem;
+  height: 13rem;
   font-weight: bold;
   font-size: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   a {
     color: $light-grey;
+    margin: .3rem;
 
     &:hover {
       color: lighten($light-grey, 10%);
@@ -17,12 +19,10 @@
   }
 
   .copyright {
-    flex: 1;
-    margin-left: 1rem;
+    margin: 0 0 1rem 0;
   }
 
   .social {
-    width: 13rem;
-    margin-right: 1rem;
+    text-align: center;
   }
 }
