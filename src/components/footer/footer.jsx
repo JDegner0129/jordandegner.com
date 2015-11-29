@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
       const itemClass = `fa fa-fw fa-${item.media}`;
 
       return (
-        <a href={item.url}>
+        <a key={item.media} href={item.url}>
           <span className={itemClass}></span>
         </a>
       );
