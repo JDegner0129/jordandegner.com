@@ -9,13 +9,29 @@ export default class Footer extends React.Component {
         <span className="copyright">Copyright &copy; 2015 Jordan Degner</span>
         <section className="social">
           <div className="twitter">
-            <a href={this.props.twitterUrl}><span className="fa fa-fw fa-twitter"></span> Twitter</a>
+            <a href={this.props.twitterUrl}>
+              <span className="fa fa-fw fa-twitter"></span> Twitter
+            </a>
           </div>
           <div className="facebook">
-            <a href={this.props.facebookUrl}><span className="fa fa-fw fa-facebook"></span> Facebook</a>
+            <a href={this.props.facebookUrl}>
+              <span className="fa fa-fw fa-facebook"></span> Facebook
+            </a>
           </div>
           <div className="github">
-            <a href={this.props.githubUrl}><span className="fa fa-fw fa-github"></span> GitHub</a>
+            <a href={this.props.githubUrl}>
+              <span className="fa fa-fw fa-github"></span> GitHub
+            </a>
+          </div>
+          <div className="linkedin">
+            <a href={this.props.linkedinUrl}>
+              <span className="fa fa-fw fa-linkedin"></span> LinkedIn
+            </a>
+          </div>
+          <div className="email">
+            <a href={this.props.email}>
+              <span className="fa fa-fw fa-envelope"></span> Email
+            </a>
           </div>
         </section>
       </footer>
@@ -27,4 +43,6 @@ Footer.propTypes = {
   twitterUrl: React.PropTypes.string,
   facebookUrl: React.PropTypes.string,
   githubUrl: React.PropTypes.string,
+  linkedinUrl: React.PropTypes.string,
+  email: React.PropTypes.string,
 };

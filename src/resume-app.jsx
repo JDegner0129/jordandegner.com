@@ -15,6 +15,8 @@ const socialInfo = {
   twitterUrl: 'https://twitter.com/jordandegner',
   facebookUrl: 'https://facebook.com/jordan.degner',
   githubUrl: 'https://github.com/jdegner0129',
+  linkedinUrl: 'https://www.linkedin.com/in/jordan-degner-a2823a45',
+  email: 'mailto:jdegner0129@gmail.com',
 };
 
 // names correspond to the names found at http://devicon.fr
@@ -76,7 +78,9 @@ class ResumeApp extends React.Component {
 
         <Footer twitterUrl={socialInfo.twitterUrl}
           facebookUrl={socialInfo.facebookUrl}
-          githubUrl={socialInfo.githubUrl} />
+          githubUrl={socialInfo.githubUrl}
+          linkedinUrl={socialInfo.linkedinUrl}
+          email={socialInfo.email} />
       </section>
     );
   }
