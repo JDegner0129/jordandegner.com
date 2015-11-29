@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import '../../variables.scss';
 
 .job-item {
   background-color: $light-grey;
@@ -32,11 +32,17 @@
 
   .job-timeframe {
     float: right;
+    font-style: italic;
   }
 
   .job-tech {
     color: $red;
-    margin-bottom: 0;
+    font-size: 1.5rem;
+    text-align: right;
+
+    span {
+      margin: .3rem;
+    }
   }
 }
 

@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.skill-item {
+  display: inline-block;
+  margin: 2rem;
+  text-align: center;
+
+  .skill-icon {
+    display: block;
+    font-size: 6rem;
+    // color: $red;
+  }
+}

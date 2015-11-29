@@ -4,6 +4,13 @@ import './job-item.scss';
 
 export default class Job extends React.Component {
   render() {
+    const techIcons = this.props.tech.map(tech => {
+      const techClass = `devicon-${tech}-plain`;
+      return (
+        <span key={tech} className={techClass}></span>
+      );
+    });
+
     return (
       <div className="job-item">
         <div className="job-item-header">
@@ -12,7 +19,9 @@ export default class Job extends React.Component {
         </div>
         <h3 className="job-title clearfix">{this.props.title}</h3>
         <p className="job-description">{this.props.description}</p>
-        <p className="job-tech">{this.props.tech}</p>
+        <div className="job-tech">
+          {techIcons}
+        </div>
       </div>
     );
   }
@@ -24,5 +33,5 @@ Job.propTypes = {
   title: React.PropTypes.string.isRequired,
   timeframe: React.PropTypes.string.isRequired,
   description: React.PropTypes.string,
-  tech: React.PropTypes.string.isRequired,
+  tech: React.PropTypes.array.isRequired,
 };

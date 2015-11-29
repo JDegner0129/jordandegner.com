@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+@import url(https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css);
+
+.skill-banner {
+  background-color: $red;
+  height: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+}

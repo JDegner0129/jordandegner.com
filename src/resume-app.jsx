@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Header, Footer, JobList } from './components';
+import { Header, Footer, JobList, SkillBanner } from './components';
 
 import './resume-app.scss';
 
@@ -17,6 +17,10 @@ const socialInfo = {
   githubUrl: 'https://github.com/jdegner0129',
 };
 
+// names correspond to the names found at http://devicon.fr
+const skills = ['csharp', 'javascript', 'python', 'mongodb'];
+
+// tech corresponds to the names found at http://devicon.fr
 const jobInfo = [
   {
     company: 'Hudl',
@@ -26,7 +30,7 @@ const jobInfo = [
     description: `I work on Hudl's core feature set for its upcoming platform,
     writing the tools coaches and athletes will use to improve through video
     every day.`,
-    tech: 'C#, JavaScript, MongoDB, Sass, ASP.NET, React, Backbone, Unity',
+    tech: ['csharp', 'javascript', 'mongodb', 'sass', 'react', 'backbonejs'],
   },
   {
     company: 'Garmin',
@@ -36,7 +40,7 @@ const jobInfo = [
     description: `I wrote unit and system tests for our aviation TCAS
     units, and identified new algorithms to increase TCAS accuracy after
     studying existing flight data and simulations.`,
-    tech: 'C, C++, Python',
+    tech: ['c', 'cplusplus', 'python'],
   },
   {
     company: 'Sandhills Publishing',
@@ -45,7 +49,7 @@ const jobInfo = [
     title: 'Software Engineer Intern',
     description: `I created custom Microsoft Dynamics CRM pages for our clients,
     as well as developing and consuming an internal localization directory for these pages.`,
-    tech: 'Visual Basic, JavaScript, MSSQL',
+    tech: ['dot-net', 'javascript', 'mysql'],
   },
   {
     company: 'Baldwin Hackett & Meeks, Inc.',
@@ -56,7 +60,7 @@ const jobInfo = [
     clients in understanding and making judgments based on their health care records.
     After mining this information, I created a PHP web app to display the data
     in a more readable way.`,
-    tech: 'Python, NumPy, MatPlotLib, PHP, JavaScript, MySQL',
+    tech: ['python', 'java', 'php', 'mysql'],
   },
 ];
 
@@ -65,6 +69,8 @@ class ResumeApp extends React.Component {
     return (
       <div>
         <Header name={personalInfo.name} title={personalInfo.title} />
+
+        <SkillBanner skills={skills} />
 
         <JobList jobs={jobInfo} />
 
