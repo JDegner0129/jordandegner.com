@@ -19,23 +19,23 @@
     }
   }
 
-  h2, h3 {
+  h1, h2 {
     margin: 0;
   }
 
-  .job-company {
+  .company {
     font-weight: bold;
     color: $red;
     font-size: 2rem;
     float: left;
   }
 
-  .job-timeframe {
+  .timeframe {
     float: right;
     font-style: italic;
   }
 
-  .job-tech {
+  .job-item-technology {
     color: $red;
     font-size: 1.5rem;
     text-align: right;

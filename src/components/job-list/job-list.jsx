@@ -18,9 +18,9 @@ export default class JobList extends React.Component {
     });
 
     return (
-      <div className="job-list">
+      <section className="job-list">
         {jobs}
-      </div>
+      </section>
     );
   }
 }

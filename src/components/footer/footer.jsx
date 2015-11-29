@@ -5,9 +5,9 @@ import './footer.scss';
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className="footer">
+      <footer className="footer">
         <span className="copyright">Copyright &copy; 2015 Jordan Degner</span>
-        <div className="social">
+        <section className="social">
           <div className="twitter">
             <a href={this.props.twitterUrl}><span className="fa fa-fw fa-twitter"></span> Twitter</a>
           </div>
@@ -17,8 +17,8 @@ export default class Footer extends React.Component {
           <div className="github">
             <a href={this.props.githubUrl}><span className="fa fa-fw fa-github"></span> GitHub</a>
           </div>
-        </div>
-      </div>
+        </section>
+      </footer>
     );
   }
 }

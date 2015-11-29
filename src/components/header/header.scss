@@ -5,16 +5,13 @@
   justify-content: center;
   font-weight: bold;
 
-  div {
-    text-align: center;
-  }
-
   h1 {
     font-size: 8rem;
     margin: 0;
   }
 
-  h2 {
+  h2.header-title {
+    text-align: right;
     font-size: 3rem;
     margin: 0;
   }

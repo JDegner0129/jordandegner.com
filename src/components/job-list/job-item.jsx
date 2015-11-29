@@ -12,17 +12,19 @@ export default class Job extends React.Component {
     });
 
     return (
-      <div className="job-item">
-        <div className="job-item-header">
-          <h2 className="job-company"><a href={this.props.url}>{this.props.company}</a></h2>
-          <span className="job-timeframe">{this.props.timeframe}</span>
-        </div>
-        <h3 className="job-title clearfix">{this.props.title}</h3>
-        <p className="job-description">{this.props.description}</p>
-        <div className="job-tech">
+      <article className="job-item">
+        <header className="job-item-header">
+          <h1 className="company"><a href={this.props.url}>{this.props.company}</a></h1>
+          <span className="timeframe">{this.props.timeframe}</span>
+          <h2 className="title clearfix">{this.props.title}</h2>
+        </header>
+        <section className="job-item-description">
+          <p>{this.props.description}</p>
+        </section>
+        <footer className="job-item-technology">
           {techIcons}
-        </div>
-      </div>
+        </footer>
+      </article>
     );
   }
 }

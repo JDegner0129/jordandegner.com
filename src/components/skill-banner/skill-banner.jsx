@@ -12,10 +12,10 @@ export default class SkillBanner extends React.Component {
     });
 
     return (
-      <div className="skill-banner">
+      <section className="skill-banner">
         <h1>I love:</h1>
         {skills}
-      </div>
+      </section>
     );
   }
 }

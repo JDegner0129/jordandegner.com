@@ -26,7 +26,7 @@ const jobInfo = [
     company: 'Hudl',
     url: 'http://www.hudl.com',
     title: 'Developer Lead',
-    timeframe: 'May 2014 - Present',
+    timeframe: 'May 2014 – Present',
     description: `I work on Hudl's core feature set for its upcoming platform,
     writing the tools coaches and athletes will use to improve through video
     every day.`,
@@ -35,7 +35,7 @@ const jobInfo = [
   {
     company: 'Garmin',
     url: 'http://www.garmin.com',
-    timeframe: 'May 2013 - August 2013',
+    timeframe: 'May 2013 – August 2013',
     title: 'Software Engineer Intern',
     description: `I wrote unit and system tests for our aviation TCAS
     units, and identified new algorithms to increase TCAS accuracy after
@@ -45,7 +45,7 @@ const jobInfo = [
   {
     company: 'Sandhills Publishing',
     url: 'http://www.sandhills.com',
-    timeframe: 'May 2012 - August 2012',
+    timeframe: 'May 2012 – August 2012',
     title: 'Software Engineer Intern',
     description: `I created custom Microsoft Dynamics CRM pages for our clients,
     as well as developing and consuming an internal localization directory for these pages.`,
@@ -54,7 +54,7 @@ const jobInfo = [
   {
     company: 'Baldwin Hackett & Meeks, Inc.',
     url: 'http://www.bhmi.com',
-    timeframe: 'May 2011 - August 2011',
+    timeframe: 'May 2011 – August 2011',
     title: 'Software Engineer Intern',
     description: `I wrote data mining scripts using Python and MySQL to assist
     clients in understanding and making judgments based on their health care records.
@@ -67,7 +67,7 @@ const jobInfo = [
 class ResumeApp extends React.Component {
   render() {
     return (
-      <div>
+      <section className="resume">
         <Header name={personalInfo.name} title={personalInfo.title} />
 
         <SkillBanner skills={skills} />
@@ -77,7 +77,7 @@ class ResumeApp extends React.Component {
         <Footer twitterUrl={socialInfo.twitterUrl}
           facebookUrl={socialInfo.facebookUrl}
           githubUrl={socialInfo.githubUrl} />
-      </div>
+      </section>
     );
   }
 }
