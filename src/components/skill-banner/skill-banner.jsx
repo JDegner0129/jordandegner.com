@@ -23,3 +23,7 @@ export default class SkillBanner extends React.Component {
 SkillBanner.propTypes = {
   skills: React.PropTypes.array.isRequired,
 };
+
+SkillBanner.defaultProps = {
+  skills: [],
+};

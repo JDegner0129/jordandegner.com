@@ -11,13 +11,30 @@ const personalInfo = {
   title: 'Software Engineer',
 };
 
-const socialInfo = {
-  twitterUrl: 'https://twitter.com/jordandegner',
-  facebookUrl: 'https://facebook.com/jordan.degner',
-  githubUrl: 'https://github.com/jdegner0129',
-  linkedinUrl: 'https://www.linkedin.com/in/jordan-degner-a2823a45',
-  email: 'mailto:jdegner0129@gmail.com',
-};
+// media correspond to the class names found at
+// http://fortawesome.github.io/Font-Awesome/icons/
+const socialItems = [
+  {
+    url: 'https://twitter.com/jordandegner',
+    media: 'twitter',
+  },
+  {
+    url: 'https://facebook.com/jordan.degner',
+    media: 'facebook',
+  },
+  {
+    url: 'https://github.com/jdegner0129',
+    media: 'github',
+  },
+  {
+    url: 'https://www.linkedin.com/in/jordan-degner-a2823a45',
+    media: 'linkedin',
+  },
+  {
+    url: 'mailto:jdegner0129@gmail.com',
+    media: 'envelope',
+  },
+];
 
 // names correspond to the names found at http://devicon.fr
 const skills = ['csharp', 'javascript', 'python', 'mongodb'];
@@ -76,11 +93,7 @@ class ResumeApp extends React.Component {
 
         <JobList jobs={jobInfo} />
 
-        <Footer twitterUrl={socialInfo.twitterUrl}
-          facebookUrl={socialInfo.facebookUrl}
-          githubUrl={socialInfo.githubUrl}
-          linkedinUrl={socialInfo.linkedinUrl}
-          email={socialInfo.email} />
+        <Footer socialItems={socialItems} />
       </section>
     );
   }

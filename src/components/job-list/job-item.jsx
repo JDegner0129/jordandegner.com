@@ -37,3 +37,8 @@ Job.propTypes = {
   description: React.PropTypes.string,
   tech: React.PropTypes.array.isRequired,
 };
+
+Job.defaultProps = {
+  description: '',
+  tech: [],
+};

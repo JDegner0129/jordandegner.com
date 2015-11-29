@@ -28,3 +28,7 @@ export default class JobList extends React.Component {
 JobList.propTypes = {
   jobs: React.PropTypes.array.isRequired,
 };
+
+JobList.defaultProps = {
+  jobs: [],
+};
